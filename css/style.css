@@ -1,13 +1,106 @@
 .customContent{
     font-family: "Prata" !important;
-    font-size: 65px;
+
+    letter-spacing: 13px;
+    color: #464646;
+    font-weight:550;
     /* display: block !important; */
 }
 
 body .modal-dialog { /* Width */
-    max-width: 100%;
+    max-width:50%;
+    max-height: 100%;
+    height: auto !important;
     width: auto !important;
+    
     display: inline-block;
+}
+
+.modal-body{
+    padding: 0 !important;
+    
+}
+
+.twenty{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: min(20em, 12vw) !important;
+    padding-top: 30px !important; 
+    margin-left: 700px;
+}
+
+.and{
+    color: #FD8C94;
+    font-size: 1em !important;
+    
+}
+
+.percent{
+    display: flex !important;
+    justify-content: left;
+    align-items: left;
+    font-size: min(0.2em, 0.16em) !important;
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: .8;
+    padding: 0 !important;
+    padding-right: 50px !important;
+    right: 10px;
+}
+
+
+.containerLeft{
+    width: 50% !important;
+    /* z-index: -1; */
+    display: flex !important;
+    justify-content: right;
+    align-items: left;
+    height: 10% !important;
+    padding-right: 9vw;
+    padding-left: 3vw;
+    padding-top: 1;
+}
+
+.containerMiddle{
+    width: 0% !important;
+    /* z-index: -1; */
+    display: flex !important;
+    justify-content: left;
+    /* padding-right: 80px; */
+    align-items: center;
+}
+
+.containerRight{
+    width: 50% !important;
+    /* z-index: -1; */
+    display: flex !important;
+    justify-content: center;
+    align-items: left;
+    padding-left: 50px;
+    /* padding-left: min(50px, 4vw); */
+}
+
+.left{
+    text-align: left;
+    padding-left: 0% !important;
+    padding-top: 50px;
+    font-size: 5.5em;
+    /* padding-left: 10% !important; */
+}
+
+.middle{
+    /* justify-content: center;
+    align-items: center; */
+    /* padding-top: 25% !important; */
+    /* padding-right: -20px; */
+    right:40px;
+    font-size: 5.5em;
+}
+
+.container{
+    padding: 0px 50px !important;
+    padding-right: 100px;
 }
 
 .modal {
@@ -21,9 +114,108 @@ body .modal-dialog { /* Width */
      z-index: 1050;
   }
 
+ /* .container .row{
+      width: 100% !important;
+  } */
+
+  .verticleLineLeft {
+    border-left: 1px solid #E9E9E9;
+    height: 10% !important;
+    justify-content: right;
+    /* margin-left: 11%;
+    border-top: 6px #FD8C94;
+    border-width: 12px; */
+    /* position: absolute; */
+    /* left: 50%;
+    margin-left: -3px;
+    top: 0; */
+  }
+  .verticleLineLeftBottom {
+    border: 0;
+    margin: 0;
+    border-left: 1px solid #FD8C94;
+    height: 125px;
+    /* float: left; */
+  
+    /* margin-left: 11%;
+    border-top: 6px #FD8C94;
+    border-width: 12px; */
+    /* position: absolute; */
+    /* left: 50%;
+    margin-left: -3px;
+    top: 0; */
+  }
+
+.verticleLineLeftTop{
+    border: 0;
+    margin: 0;
+    border-left: 1px solid #FD8C94;
+    height: 125px;
+}
+
+  .test{
+      width: 1px !important;
+      padding-left: 51px;
+  }
+
+  .topLine{
+    width: 1px !important;
+    padding-left: 51px; 
+  }
+
+  .middleLine{
+    /* border-right: 6px solid green; */
+    height: 500px;
+    padding-left: 200px;
+    background:linear-gradient(black,black) left /* left or right or else */ no-repeat;
+    background-size:50% 3px;
+  }
+/* 
+  .formModal{
+      font-size: 1px !important;
+      position: absolute;
+      bottom: 0;
+      right: 100px;
+  } */
+
+  form {
+    display: flex; /* 2. display flex to the rescue */
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+  }
+  
+  label, input {
+    display: block; /* 1. oh noes, my inputs are styled as block... */
+  }
+  input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+  }
+
+  .email{
+      margin-right: 10px;
+  }
+
+.signUp{
+    width: 150px;
+    height: 50px;
+    border:none;
+    border-bottom: 1px solid black;
+    background: rgba(255, 255, 255,0);
+    font-size: 25px;
+}
+
+::placeholder{
+    color: #464646 !important;
+    opacity: 1;
+}
 @font-face {
     font-family: Prata;
-    src: url("fonts\Prata-Regular.ttf");
+    src: url("fonts/Prata-Regular.ttf");
     letter-spacing: 13px;
     color:#464645
 }
