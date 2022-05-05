@@ -113,7 +113,7 @@ body .modal-dialog { /* Width */
     border-radius:50%;
     background: #E9E9E9;
     top:3px;
-    left:.9vw;
+    left:1.2vw;
   }
   /* .divided {
     display: flex;
@@ -152,4 +152,146 @@ body .modal-dialog { /* Width */
       color: #FD8C94;
       font-weight: bold;
       text-align: center;
+  }
+
+  @media only screen and (max-width:1240px){
+    body .modal-dialog { /* Width */
+        max-width:90%;
+        max-height: 100%;
+        height: auto !important;
+        width: auto !important;
+        
+        display: inline-block;
+    }
+    
+    .modal-body{
+        padding: 0 !important;
+        
+    }
+    
+    .modal {
+        z-index: -1;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        font-family: Prata;
+      }
+      
+      .modal-open .modal {
+         z-index: 1050;
+      }
+      
+      .container{
+          padding:45px !important;
+          /* padding-left: 30px !important; */
+      }
+    
+      .topContainer{
+          /* background-color: red; */
+          width: 100%;
+      }
+    
+      .topText{
+          font-size: 50px;
+          letter-spacing: 13px;
+          color: #464646;
+          /* text-align: left; */
+      }
+    
+      .connectedDots{
+          /* background:red; */
+          width: 50%;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          margin-bottom: 20px;
+      }
+    
+    .initialConnect{
+        /* width:40%; */
+    }
+    
+      .connectedDots:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 1px;
+        width: 100%;
+        background: #E9E9E9;
+      }
+    
+      .smallDot{
+        position: relative;
+        z-index: 2;
+        border: 2px solid #E9E9E9;   
+        /* background: #fff; */
+        box-shadow: 0 0 0 2px white;
+        width:8px;
+        height:8px;
+        border-radius:50%;
+        background: #E9E9E9;
+      }
+      
+    
+      .bigDot{
+        border: 2px solid #E9E9E9;   
+        /* background: #fff; */
+        box-shadow: 0 0 0 2px #E9E9E9;
+        width:13px;
+        height:13px;
+        border-radius:50%;
+        margin-left:30px;
+        background:#E9E9E9;
+        margin-bottom:10px;
+        position: relative;
+        bottom:5px;
+        right:18px;
+      }
+    
+      .finalSmallDot{
+        position: relative;
+        z-index: 2;
+        border: 2px solid #E9E9E9;   
+        /* background: #fff; */
+        box-shadow: 0 0 0 2px #E9E9E9;
+        width:4px;
+        height:4px;
+        border-radius:50%;
+        background: #E9E9E9;
+        top:3px;
+        left:5vw !important;
+      }
+      .middleContainer{
+          /* background-color: blue;; */
+      }
+    
+      .middleText{
+          font-size: 14px;
+          letter-spacing: 0.7px;
+          text-align: left;
+      }
+    
+      .bottomContainer{
+          /* background-color: green; */
+    }
+    
+      .bottomForm{
+          font-size: 15px;
+          width: 68vw;
+          height: 50px;
+          border:none;
+          border: 1px solid #FD8C94;
+          background: rgba(255, 255, 255,0);
+          font-size: 15px;
+          letter-spacing: 3px;
+          color: #FD8C94;
+          font-weight: bold;
+          text-align: center;
+      }
+    
   }
