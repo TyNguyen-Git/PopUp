@@ -27,7 +27,7 @@ body .modal-dialog { /* Width */
     align-items: center;
     font-size: min(20em, 12vw) !important;
     padding-top: 30px !important; 
-    margin-left: 700px;
+    /* margin-left: 700px; */
 }
 
 .and{
@@ -52,13 +52,13 @@ body .modal-dialog { /* Width */
 
 .containerLeft{
     width: 50% !important;
-    /* z-index: -1; */
+    z-index: 1;
     display: flex !important;
-    justify-content: right;
+    justify-content: center;
     align-items: left;
     height: 10% !important;
     padding-right: 9vw;
-    padding-left: 3vw;
+    /* padding-left: 3vw; */
     padding-top: 1;
 }
 
@@ -96,6 +96,13 @@ body .modal-dialog { /* Width */
     /* padding-right: -20px; */
     right:40px;
     font-size: 5.5em;
+    background: white;
+    padding-right: 30px !important;
+    padding-top: 50px;
+}
+
+span{
+    font-size: 2.3em;
 }
 
 .container{
@@ -164,11 +171,11 @@ body .modal-dialog { /* Width */
   }
 
   .middleLine{
-    /* border-right: 6px solid green; */
+    border-right: 1px solid #E9E9E9;
     height: 500px;
-    padding-left: 200px;
-    background:linear-gradient(black,black) left /* left or right or else */ no-repeat;
-    background-size:50% 3px;
+    /* padding-left: 50px; */
+    /* background:linear-gradient(black,black) left no-repeat;
+    background-size:50% 3px; */
   }
 /* 
   .formModal{
@@ -182,8 +189,8 @@ body .modal-dialog { /* Width */
     display: flex; /* 2. display flex to the rescue */
     flex-direction: row;
     position: absolute;
-    bottom: 0;
-    right: 100px;
+    bottom: 5vw;
+    right: 1vw;
   }
   
   label, input {
@@ -193,7 +200,7 @@ body .modal-dialog { /* Width */
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
   }
 
   .email{
@@ -204,18 +211,221 @@ body .modal-dialog { /* Width */
     width: 150px;
     height: 50px;
     border:none;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #FD8C94;
     background: rgba(255, 255, 255,0);
-    font-size: 25px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #FD8C94;
 }
 
 ::placeholder{
     color: #464646 !important;
+    font-weight: bold;
     opacity: 1;
+    letter-spacing: 3px;
+    font-size: 15px;
 }
 @font-face {
     font-family: Prata;
     src: url("fonts/Prata-Regular.ttf");
     letter-spacing: 13px;
     color:#464645
+}
+
+@media only screen and (max-width:1240px){
+    .middleLine{
+        display: none;
+    }
+    body .modal-dialog { /* Width */
+        max-width:90%;
+        max-height: 100%;
+        height: auto !important;
+        width: auto !important;
+        
+        display: inline-block;
+    }
+    .customContent{
+        font-family: "Prata" !important;
+        font-size: 0.4em !important;
+        letter-spacing: 13px;
+        color: #464646;
+        font-weight:550;
+        white-space: pre-wrap;
+        /* display: block !important; */
+    }
+
+    .middle{
+        /* justify-content: center;
+        align-items: center; */
+        /* padding-top: 25% !important; */
+        /* padding-right: -20px; */
+        right:0px;
+        height: 30vw !important;
+        background: none;
+        padding-right: 0px !important;
+        padding-top: 0px;
+        position: relative;
+        right: 53vw;
+        z-index: 2;
+        
+        /* bottom: 100vw; */
+        /* background: white; */
+        /* 
+        font-size: 37px; */
+    }
+      
+.containerLeft{
+    width: 100% !important;
+    /* z-index: -1; */
+    max-height:300px;
+    display: inline-block;
+    justify-content:center;
+    align-items: center;
+    /* height: 10% !important; */
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+    z-index: 3;
+}
+
+.containerMiddle{
+    width: 0% !important;
+    display: block;
+    /* z-index: -1; */
+    /* display: flex !important;
+    justify-content: left; */
+    /* padding-right: 80px; */
+    align-items: center;
+    /* float: left; */
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    font-size: 2em !important;
+}
+
+.containerRight{
+    width: 0% !important;
+    /* z-index: -1; */
+    display: inline-flex !important;
+    /* justify-content: center;
+    align-items: left; */
+    padding-left: 0px;
+    top: 50px;
+    /* position:relative; */
+    /* padding-left: min(50px, 4vw); */
+}
+
+.container{
+    white-space: pre-wrap;
+    padding: 0 !important;
+}
+
+.verticleLineLeftTop{
+    display: none;
+}
+.verticleLineLeftBottom{
+    display: none;
+}
+
+.twenty{
+    display: flex !important;
+    justify-content: right;
+    align-items: right;
+    font-size: 20em !important;
+    padding-top: 30px !important; 
+    padding-right: 35vw !important;
+    margin-left: 0px;
+    position: relative;
+    top: 120px;
+    z-index: 3;
+    /* white-space: pre-wrap; */
+}
+.left{
+    text-align: left;
+    padding-left: 10% !important;
+    padding-top: 0px !important;
+    font-size:7em !important;
+    width: 100vw !important;
+    /* float: right; */
+    position: relative;
+    bottom:75px !important;
+    /* padding-bottom: 100% !important; */
+}
+
+h1{
+    font-family: sans-serif;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 40px;
+    max-width: 600px;
+    position:relative;
+    bottom: 100vw;
+    }
+    h1:before{
+    content: "";
+    display:block;
+    width: 170px;
+    height:2px;
+    background: #E9E9E9;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+    }
+    h1:after{
+    content: "";
+    display:block;
+    width: 120px;
+    height:2px;
+    background: #E9E9E9;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    }
+    span{
+    background: #fff;
+    font-size: 2.1em;
+    background-repeat: repeat-x;
+    /* background-size: 12px; */
+    }
+
+
+    
+.row{
+    margin: 0px !important;
+}
+
+
+.verticleLineLeft{
+    border-left: none;
+    height: 10% !important;
+    justify-content: right;
+    padding-bottom: 25px;
+}
+
+form {
+    display:block;
+    flex-direction:none;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+  }
+  .email{
+    margin-right: 10px;
+    display: inline-block;
+    font-size: x-large;
+    text-align: center;
+}
+
+.signUp{
+  width: 80vw;
+  border: 1px solid #FD8C94;
+  background: rgba(255, 255, 255,0);
+  font-size: x-large;
+  letter-spacing: 3px;
+  color: #FD8C94;
+  
+}
 }

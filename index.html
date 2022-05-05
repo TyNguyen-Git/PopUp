@@ -11,7 +11,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/modalScript.js"></script>
-        <button type = "button" class = "btn btn-info btn-lg" data-toggle = "modal" data-target = "#popupModal"> Open Modal</button>
         <div id = "popupModal" class = "modal fade modal" role = "dialog">
             <div class = "modal-dialog">
                 <div class = "modal-content customContent">
@@ -30,32 +29,35 @@
                                                 <div class = " col-xl-5 left">
                                                     <p>Get Your Style On</p>
                                                 </div>
-                                           
-                                                <div class = "containerMiddle">
-                                                    <div class = "middleLine"></div>
-                                                    <div class = " col-xl-1 middle">
-                                                        <div class = "and">
-                                                            <p >&</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                        <div class = "containerRight">
-                                            <div class = " col-xl-5  twenty">
-                                                <p>20</p>
-                                                <div class = " col-xl-1 percent">
-                                                    <p><span class = "percentSign"style="font-size: 90px !important; letter-spacing:0px">%</span> OFF</p>
+ 
+                                        </div>
+                                                                                  
+                                        <div class = "containerMiddle">
+                                            <div class = "middleLine"></div>
+                                            <div class = " col-xl-1 middle">
+                                                <div class = "and">
+                                                    <h1><span>&</span></h1>
+                                                    <!-- <h1><span>asd</span></h1> -->
                                                 </div>
                                             </div>
-                                            <form>
-                                                <input type="text" class = "email"  placeholder="Email Address"/>
-                                                <!-- <input type="text" class = "signUp"  placeholder="Sign Up" /> -->
-                                                <button class = "signUp" type="submit">
-                                                  Sign up
-                                                </button>
-                                              </form>
                                         </div>
+                                        
+                                <div class = "containerRight">
+                                    <div class = " col-xl-5  twenty">
+                                        <p>20</p>
+                                        <div class = " col-xl-1 percent">
+                                            <p><span class = "percentSign"style="font-size: 90px !important; letter-spacing:0px">%</span> OFF</p>
                                         </div>
+                                    </div>
+                                    <form method="POST" action = "redirect.html">
+                                        
+                                        <input type="text" class = "email"  placeholder="Email Address"/>
+                                        <!-- <input type="text" class = "signUp"  placeholder="Sign Up" /> -->
+                                        <input class = "signUp" type="submit" value="Sign Up"> 
+                                          <!-- <p>Sign up</p> -->
+                                        <!-- </button> -->
+                                      </form>
+                                </div>
 
                                         
                                 </div>
